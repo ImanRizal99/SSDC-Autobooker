@@ -12,9 +12,7 @@ from selenium.webdriver.common.by import By
 
 msg = EmailMessage()
 
-
-chromedriver = os.path.abspath("chromedriver.exe")
-driver = webdriver.Chrome(chromedriver)
+driver = webdriver.Chrome("C:\Program Files\Google\Chrome\Application\chromedriver.exe")
 driver.implicitly_wait(10)
 driver.maximize_window()
 driver.get("https://www.ssdcl.com.sg/User/Login")
